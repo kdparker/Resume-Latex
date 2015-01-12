@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{lipsum}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{resblue}{RGB}{0, 35, 117}
+\definecolor{resorange}{RGB}{232, 193, 0}
+
+\begin{document}
+  \begin{center}
+  {\LARGE\bf Keegan \color{resblue}Parker}\bigskip \\
+  
+  %Header here (when website is done will replace address with website and LinkedIn)
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill} } l l r }
+  	 {\includegraphics[scale=0.02]{octocat.png} \color{blue} \href{https://github.com/kdparker}{KDParker}} &
+  	 {\includegraphics[scale=0.02]{email.png} \color{blue} \href{mailto:keegandparker@gmail.com}{keegandparker@gmail.com}}  &  
+  	 379 Erb Street W. Unit 3 \\
+  	 {\includegraphics[scale=0.02]{phone.png} (226)791-2382} & 
+  	 {\includegraphics[scale=0.07]{waterloo.png} Waterloo ID\#: 20501164} & 
+  	 Waterloo, ON, N2L 1W7 \\
+  	 \arrayrulecolor{resorange} \hline
+  \end{tabular*}
+  \end{center}
+
+\begin{minipage}{0.3\textwidth}
+\section*{\color{resblue}Skills}
+\end{minipage}
+\begin{minipage}{0.7\textwidth}
+\begin{tabular}{!{\color{resorange}\vrule}p{\textwidth}}
+\section*{\color{resblue}Education}
+\lipsum[1]
+\section*{\color{resblue}Experience}
+\lipsum[1]
+\end{tabular}
+\end{minipage}
+
+\end{document}
