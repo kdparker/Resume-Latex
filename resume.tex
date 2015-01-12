@@ -1,20 +1,21 @@
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage[margin=2cm]{geometry}
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{colortbl}
-\usepackage{lipsum}
-\usepackage{framed}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 
 \definecolor{resblue}{RGB}{0, 35, 117}
 \definecolor{resorange}{RGB}{232, 193, 0}
 
+\renewcommand{\rmdefault}{bch}
+\renewcommand{\sfdefault}{qag}
+
 \begin{document}
   \begin{center}
-  {\LARGE\bf Keegan \color{resblue}Parker}\bigskip \\
+  {\LARGE\bf \sffamily Keegan \color{resblue}Parker}\bigskip \\
   
   %Header here (when website is done will replace address with website and LinkedIn)
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill} } l l r }
@@ -27,16 +28,64 @@
   	 \arrayrulecolor{resorange} \hline
   \end{tabular*}
   \end{center}
-
-\begin{minipage}{0.3\textwidth}
-\section*{\color{resblue}Skills}
+\begin{minipage}{0.2\textwidth}
+\raggedleft\section*{\LARGE\sffamily\color{resblue}Skills}
+\raggedleft\subsection*{\Large\sffamily Languages}
+  \raggedleft{\bf \color{resblue} Experienced with:}\\
+  \raggedleft{ Python \\ C \\ C++ \\ Racket}\bigskip \\
+  \raggedleft{\bf \color{resblue} Working Knowledge:}\\
+  \raggedleft{ Java \\ Visual Basic \\ Javascript \\ HTML \\ CSS}
+\vspace{24mm}
+\subsection*{\Large\sffamily Tools}
+  \raggedleft{Git \\ Subversion \\ \LaTeX \\ MySQL}
+\vspace{24mm}
+\subsection*{\Large\sffamily Operating Systems}
+  \raggedleft{Linux (Mint/Ubuntu) \\ Windows \\ Mac OS X}
 \end{minipage}
-\begin{minipage}{0.7\textwidth}
+\begin{minipage}{0.8\textwidth}
 \begin{tabular}{!{\color{resorange}\vrule}p{\textwidth}}
-\section*{\color{resblue}Education}
-\lipsum[1]
-\section*{\color{resblue}Experience}
-\lipsum[1]
+\section*{\sffamily\color{resblue}Education}
+{\bf Bachelor of Computers Science, Honours} {\color{resblue} \textbullet} {\bf University of Waterloo} {\it (2013- 2018 expected)}
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Cumulative Average of \it 83\%
+\end{itemize}
+
+\section*{\sffamily\color{resblue}Work Experience}
+{\bf QA Analyst} {\color{resblue} \textbullet} {\bf Mercatus Technologies} \hfill {\it Summer 2014}
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Received an Outstanding evaluation for the term
+\item Built automated test suites for iOS and Android applications with Appium/Selenium
+\item Performed manual integration, smoke and regression tests on iOS, Android, and Web
+\item Moved over mobile automation from Subversion to Git
+\item Completed entire documentation for mobile automation test suites
+\item Taught 2 co-workers how to write and run mobile automation test suites
+\end{itemize}
+\section*{\sffamily\color{resblue}Volunteering}
+{\bf Vice President, Operations} {\color{resblue} \textbullet} {\bf Mathematics Society} \hfill {\it Winter 2015}
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Manages the day-to-day operations of the Mathematics Society
+\item Represents student body in meetings with the Dean of Mathematics
+\end{itemize}
+{\bf Council Representative} {\color{resblue} \textbullet} {\bf Mathematics Society} \hfill {\it Fall 2013, Winter/Fall 2014}
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Represented student body in council meetings.
+\item Voted on and brought up solutions to problems faced by the society.
+\item Took meeting minutes as secretary for Fall and Winter 2014 terms
+\end{itemize}
+\section*{\sffamily\color{resblue}Projects}
+{\bf \color{blue} \href{http://erbmagicleague.herokuapp.com/}{\underline{Erb Street Magic League}}} \hfill {\it Started November 2014}\medskip \\
+Website under active development. Built in Django, and deployed with Heroku, it features:
+  \begin{itemize}
+  \setlength\itemsep{0em}
+    \item Standings for all players
+    \item Ability to report matches
+    \item Match history
+    \item Elo rating calculation
+  \end{itemize}
 \end{tabular}
 \end{minipage}
 
