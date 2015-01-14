@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage{adjustbox}
 
 \definecolor{resblue}{RGB}{0, 35, 117}
 
@@ -29,7 +30,8 @@
   	 \arrayrulecolor{resblue} \hline
   \end{tabular*}
   \end{center}
-\begin{minipage}{0.23\textwidth}
+\adjustbox{valign=t}{\begin{minipage}{0.23\textwidth}
+\vspace{9mm}
 \centering\section*{\LARGE\sffamily\color{resblue}Skills}
   \raggedright{\bf Experienced with:}
   \begin{itemize}[label={\color{resblue}\textbullet}]
@@ -57,8 +59,8 @@
     \item Subversion
     \item \LaTeX
   \end{itemize}
-\end{minipage}
-\begin{minipage}{0.75\textwidth}
+\end{minipage}}
+\adjustbox{valign=t}{\begin{minipage}{0.75\textwidth}
 \begin{tabular}{!{\color{resblue}\vrule}p{\textwidth}}
 \section*{\LARGE\sffamily\color{resblue}Education}
 {\bf Bachelor of Computers Science, Honours} {\color{resblue} \textbullet} {\bf University of Waterloo} {\it  (2013- 2018 expected)}
@@ -101,6 +103,6 @@
 \item Under active development
 \end{itemize}
 \end{tabular}
-\end{minipage}
+\end{minipage}}
 
 \end{document}
